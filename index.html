@@ -527,6 +527,24 @@
       flex-wrap: wrap
     }
 
+    /*Contact form */
+    .iframe-wrap {
+      position: relative;
+      width: 100%;
+      padding-top: 150%;
+      overflow: hidden;
+    }
+
+    .iframe-wrap iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+
     /* Footer */
     footer {
       padding: 40px 0;
@@ -618,7 +636,7 @@
       <nav class="nav-actions">
         <a class="btn ghost" href="#services" aria-label="サービス">サービス</a>
         <a class="btn ghost" href="#cases" aria-label="導入事例">事例</a>
-        <a class="btn secondary" href="#download" aria-label="資料ダウンロード">資料DL</a>
+        <a class="btn ghost" href="about.html">会社情報</a>
         <a class="btn" href="#contact" aria-label="無料相談">無料相談</a>
       </nav>
     </div>
@@ -632,7 +650,7 @@
         <p class="lead">急成長企業のバックオフィス・営業・マネジメント業務をAIと自動化で最適化し、<strong>定型業務を最大70％削減</strong>。本質業務に集中できる組織へ。</p>
         <div class="cta-row">
           <a class="btn" href="#contact">AI活用の無料相談を申し込む</a>
-          <a class="btn secondary" href="#preview">導入イメージを見る</a>
+          <a class="btn secondary" href="#services">詳細</a>
         </div>
         <!-- タグセクションは削除済み -->
       </div>
@@ -875,11 +893,26 @@
         </div>
         <div class="actions">
           <a class="btn secondary" href="#contact">無料相談を申し込む</a>
-          <a class="btn" href="#diagnose">AI活用診断を受ける</a>
         </div>
       </div>
     </div>
   </section>
+
+  <!-- Contact -->
+  <section id="contact" class="alt">
+    <div class="container">
+      <div class="section-eyebrow">お問い合わせ</div>
+      <h3 class="section-title">ご相談・ご依頼はこちら</h3>
+      <div class="form-embed">
+        <div class="iframe-wrap">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSc_J0Kdmcbok5hQDPyYOtikDUwX7L1Cd5NVsyT47vuGi_8sww/viewform?embedded=true"
+            frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!-- ===================== Footer ===================== -->
   <footer>
@@ -887,9 +920,9 @@
       style="display:flex;gap:20px;justify-content:space-between;flex-wrap:wrap;align-items:center">
       <div>© 2025 合同会社イノベイスソリューションズ</div>
       <nav style="display:flex;gap:16px;flex-wrap:wrap">
-        <a href="#">会社概要</a>
-        <a href="#">プライバシーポリシー</a>
-        <a href="#">お問い合わせ</a>
+        <a href="about.html">会社概要</a>
+        <a href="privacy.html">プライバシーポリシー</a>
+        <a href="#contact">お問い合わせ</a>
       </nav>
     </div>
   </footer>
